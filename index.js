@@ -7,6 +7,6 @@ consign()
   .then('./config/routes.js')
   .into(app);
 
-app.listen(5000, () => {
-  console.log('backend executando na porta:5000 ༼ つ ◕_◕ ༽つ');
+app.listen('https://ajuda-sus.herokuapp.com/', () => {
+  console.log('༼ つ ◕_◕ ༽つ');
 })
