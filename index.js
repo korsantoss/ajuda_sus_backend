@@ -1,5 +1,7 @@
 const app = require('express')();
 const consign = require('consign');
+require('dotenv').config();
+const port = process.env.port;
 
 consign()
   .include('./config/middleware.js')
@@ -7,6 +9,6 @@ consign()
   .then('./config/routes.js')
   .into(app);
 
-app.listen('https://ajuda-sus.herokuapp.com/', () => {
+app.listen(port, () => {
   console.log('༼ つ ◕_◕ ༽つ');
 })
