@@ -3,9 +3,10 @@
 module.exports = {
     client: 'mysql2',
     connection: {
-      database: 'ajuda_sus',
-      user:     'root',
-      password: '1234'
+      host: 'sql10.freemysqlhosting.net',
+      database: 'sql10415555',
+      user:     'sql10415555',
+      password: '3niKgKZmuA'
     },
     pool: {
       min: 2,
