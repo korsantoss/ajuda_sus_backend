@@ -1,6 +1,6 @@
 module.exports = app => {
   app.get('/', (req, res) => {
-    res.send('backend ok')
+    res.json({msg: "backend executando"})
   })
 
   app.route('/bairros')
