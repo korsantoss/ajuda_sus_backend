@@ -1,0 +1,15 @@
+---
+application:
+  name: "ajuda-sus-backend"
+  project: "ajuda-sus"
+  organization: "QoveryCommunity"
+databases:
+- type: "MYSQL"
+  name: "ajuda_sus"
+  version: "8.0"
+routers:
+- name: "main-ajuda-sus-backend"
+  routes:
+  - application_name: "ajuda-sus-backend"
+    paths:
+    - "/*"
