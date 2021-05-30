@@ -1,10 +1,10 @@
 const knex = require('../config/db.js');
 
-module.exports = app => {
+module.exports = (app) => {
   const get = async(req, res) => {
     try {
-      const {bairro} = req.body
-      const getUnidades = await knex('unidade').select('*').where({bairro})
+      const { bairro } = req.params;
+      const getUnidades = await knex('unidade').select('*').where({ bairro });
       return res.json(getUnidades);
     }
     catch(e) {

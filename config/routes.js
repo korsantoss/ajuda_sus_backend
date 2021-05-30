@@ -6,9 +6,9 @@ module.exports = app => {
   app.route('/bairros')
     .get(app.api.bairros.get)
 
-  app.route('/unidades')
+  app.route('/unidades/:bairro')
     .get(app.api.unidades.get)
 
-  app.route('/publicacoes')
+  app.route('/publicacoes/:id_unidade')
     .get(app.api.publicacoes.get)
 }
